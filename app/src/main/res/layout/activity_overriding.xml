@@ -11,18 +11,26 @@
         android:orientation="vertical"
         tools:context=".Activity.OverridingActivity">
 
-        <Button
-            android:id="@+id/buttonClick"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Click" />
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:text="Check Log"/>
+
+        <Button
+            android:id="@+id/buttonClick"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="child class" />
 
         <Button
             android:id="@+id/buttonClickSuper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Click and check log" />
+            android:text="Parent and Child" />
 
     </LinearLayout>
 </layout>

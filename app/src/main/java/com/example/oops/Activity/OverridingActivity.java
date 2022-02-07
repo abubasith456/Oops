@@ -30,9 +30,12 @@ public class OverridingActivity extends AppCompatActivity {
         activityOverridingBinding.buttonClickSuper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                //parent class
                 Human human=new Human();
                 human.eat();
 
+                //children class
                 Boy boy = new Boy();
                 boy.eat();
             }
