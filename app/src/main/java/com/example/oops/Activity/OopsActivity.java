@@ -43,5 +43,13 @@ public class OopsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        activityOopsBinding.buttonInterFace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(OopsActivity.this, InterfaceActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
