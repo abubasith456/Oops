@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -23,20 +24,16 @@ public class AbstractActivity extends AppCompatActivity {
         activityAbstractBinding.buttonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int value1=0;
-                int value2=0;
-                value1 = Integer.parseInt(activityAbstractBinding.editTextValue1.getText().toString());
-                value2 = Integer.parseInt(activityAbstractBinding.editTextValue2.getText().toString());
+                try {
+                    int value1 = Integer.parseInt(activityAbstractBinding.editTextValue1.getText().toString());
+                    int value2 = Integer.parseInt(activityAbstractBinding.editTextValue2.getText().toString());
 
-                if (value1==0){
-                    Toast.makeText(AbstractActivity.this, "Please enter the value", Toast.LENGTH_SHORT).show();
-                }else {
                     MyClass myClass = new MyClass();
                     myClass.print(value1, value2);
+
+                } catch (Exception exception) {
+                    Log.e("Error ==> ", "" + exception);
                 }
-
-
-
             }
         });
     }
