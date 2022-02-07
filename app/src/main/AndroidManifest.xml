@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Oops">
         <activity
+            android:name=".Activity.AbstractActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.OopsActivity"
             android:exported="true">
             <intent-filter>
