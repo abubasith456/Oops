@@ -1,11 +1,10 @@
-package com.example.oops;
+package com.example.oops.Overload;
 
 import android.util.Log;
 
 public class Customer {
 
     String name, email, password;
-
 
     //Method overloaded.
     //Overload depends on number of arguments.
