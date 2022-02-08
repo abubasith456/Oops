@@ -2,7 +2,7 @@ package com.example.oops.Interafce;
 
 import android.util.Log;
 
-public class Human implements FirstClass, ThirdClass {
+public class Human extends SecondClass implements FirstClass {
 
     @Override
     public void wakeUp() {
@@ -19,17 +19,15 @@ public class Human implements FirstClass, ThirdClass {
         Log.e("Human ", "Eating");
     }
 
-    @Override
-    public void play() {
-        Log.e("Human ", "Playing");
-    }
+//    @Override
+//    public void play() {
+//        Log.e("Human ", "Playing");
+//    }
 
-
-
-    @Override
-    public void study() {
-        Log.e("Human ", "Studying");
-    }
+//    @Override
+//    public void study() {
+//        Log.e("Human ", "Studying");
+//    }
 
     @Override
     public void takeRest() {

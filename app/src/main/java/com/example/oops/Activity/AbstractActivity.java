@@ -25,6 +25,7 @@ public class AbstractActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
+
                     int value1 = Integer.parseInt(activityAbstractBinding.editTextValue1.getText().toString());
                     int value2 = Integer.parseInt(activityAbstractBinding.editTextValue2.getText().toString());
 

@@ -4,23 +4,24 @@ import android.util.Log;
 
 public class Customer {
 
-    String name, email,password;
+    String name, email, password;
 
 
-    //Method overloaded
+    //Method overloaded.
+    //Overload depends on number of arguments.
+    //Not depends on method name.
 
-    public void form(String name,String password) {
-
+    public void form(String name, String password) {
         this.name = name;
         this.password = password;
-        Log.e("Customer ","2 argument passed");
+        Log.e("Customer ", "2 argument passed");
     }
 
-    public void form(String name, String email,String password) {
+    public void form(String name, String email, String password) {
         this.name = name;
         this.email = email;
         this.password = password;
-        Log.e("Customer ","3 argument passed");
+        Log.e("Customer ", "3 argument passed");
     }
 
 }

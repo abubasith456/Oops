@@ -35,5 +35,11 @@
             android:layout_height="wrap_content"
             android:text="Interface" />
 
+        <Button
+            android:id="@+id/buttonEncaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encapsulation" />
+
     </LinearLayout>
 </layout>
