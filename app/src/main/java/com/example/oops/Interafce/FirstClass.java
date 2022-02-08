@@ -1,6 +1,6 @@
 package com.example.oops.Interafce;
 
-public interface MyClass {
+public interface FirstClass {
 
     void wakeUp();
 
