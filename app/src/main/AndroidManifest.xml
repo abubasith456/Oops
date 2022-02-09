@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Oops">
         <activity
+            android:name=".Activity.ExceptionHandleActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.EncapsActivity"
             android:exported="false" />
         <activity
