@@ -9,8 +9,8 @@ public class Boy extends Human {
         Log.e("Overriding ", "Boy is eating");
     }
 
-    public void print(){
-        Boy boy=new Boy();
+    public void print() {
+        Boy boy = new Boy();
         boy.eat();
     }
 }

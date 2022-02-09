@@ -4,13 +4,13 @@ import android.util.Log;
 
 public class Test {
 
-    static int a=0;
+    static int a = 0;
 
-    public Test(){
+    public Test() {
         a++;
     }
 
-    public void print(){
+    public void print() {
         Log.e("Added ", String.valueOf(a));
     }
 
