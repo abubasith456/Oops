@@ -10,6 +10,7 @@ import com.example.oops.Override.Boy;
 import com.example.oops.Override.Human;
 import com.example.oops.R;
 import com.example.oops.SingleTon;
+import com.example.oops.Test;
 import com.example.oops.databinding.ActivityOverridingBinding;
 
 public class OverridingActivity extends AppCompatActivity {
@@ -27,7 +28,18 @@ public class OverridingActivity extends AppCompatActivity {
             public void onClick(View view) {
 //                Boy boy = new Boy();
 //                boy.print();
-                SingleTon.getInstance().print();
+
+//                SingleTon singleTon = SingleTon.getInstance();
+//                singleTon.print();
+//                SingleTon.getInstance().print();
+
+                //Static example
+                Test t1 = new Test();
+                t1.print();
+                Test t2 = new Test();
+                t2.print();
+                Test t3 = new Test();
+                t3.print();
             }
         });
         activityOverridingBinding.buttonClickSuper.setOnClickListener(new View.OnClickListener() {
@@ -35,7 +47,7 @@ public class OverridingActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 //parent class
-                Human human=new Human();
+                Human human = new Human();
                 human.eat();
 
                 //children class
