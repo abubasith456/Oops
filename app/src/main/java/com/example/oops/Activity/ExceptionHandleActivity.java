@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.example.oops.PasswordException;
 import com.example.oops.R;
 import com.example.oops.databinding.ActivityExceptionHandleBinding;
 
@@ -35,17 +36,25 @@ public class ExceptionHandleActivity extends AppCompatActivity{
 
                 } catch (java.lang.Exception exception) {
                     Log.e("Error ==> ", "" + exception);
+//                    exception.printStackTrace();
                 }
 //                finally {
 //                    activityExceptionHandleBinding.editTextNumber1.setText("");
 //                    activityExceptionHandleBinding.editTextNumber2.setText("");
 //                }
 
-//                try{
-//                    Log.e("Result ==>", "");
-//                }finally {
-//                    Log.e("Result ==>", "");
+//                PasswordException passwordException=new PasswordException();
+//                try {
+//                    passwordException.verifyPassword("abu basith");
+//                } catch (PasswordException e) {
+//                    Log.e("CustomException", "Too short");
 //                }
+
+                try{
+                    Log.e("Try ==>", "");
+                }finally {
+                    Log.e("Finally ==>", "");
+                }
             }
         });
     }

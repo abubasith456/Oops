@@ -51,6 +51,4 @@ public class Human extends SecondClass implements FirstClass {
         human.sleep();
 
     }
-
-
 }
